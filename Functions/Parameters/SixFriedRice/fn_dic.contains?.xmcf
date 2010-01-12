@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version>31060566</Version><Comment>DictContains?</Comment><SourceWindowName></SourceWindowName><Class>XMCF</Class><ClipVersion></ClipVersion><ClipTimeStamp>3335421727</ClipTimeStamp><ClipAuthor>Donovan</ClipAuthor><Clipboard>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;CustomFunction id="1" name="dic.contains?" visible="True" parameters="dictionary;key"&gt;
+  &lt;Calculation&gt;/*
+NAME: 
+    dic.contains?( dictionary; key )
+
+PURPOSE: 
+    Returns boolean indicator if supplied dictionary contains supplied key
+
+HISTORY: 
+    Created 2007 by Jesse Antunes of six.fried.rice
+    Adapted 2008.07.16 by Donovan Chandler
+*/
+
+Let(
+   [
+   clean =  dictionary;
+   pattern = "&amp;lt;:" &amp;amp; key &amp;amp; ":="
+   ] ;
+   Position( clean; pattern; 1; 1) &amp;gt; 0
+)&lt;/Calculation&gt;
+&lt;/CustomFunction&gt;
+</Clipboard><Picture></Picture></FMClipboard>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version>31060566</Version><Comment>#R?
+Requires Dictcontains?()</Comment><SourceWindowName></SourceWindowName><Class>XMCF</Class><ClipVersion></ClipVersion><ClipTimeStamp>3335421685</ClipTimeStamp><ClipAuthor>Donovan</ClipAuthor><Clipboard>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;CustomFunction id="1" name="#R?" visible="True" parameters="name"&gt;
+  &lt;Calculation&gt;/*
+NAME: 
+    #R?( name )
+
+PURPOSE: 
+    Performs dic.contains?() on result of previous script
+
+HISTORY: 
+    Created 2007 by Jesse Antunes of six.fried.rice
+    Adapted 2008.07.16 by Donovan Chandler
+*/
+
+dic.contains?( Get( ScriptResult ); name )&lt;/Calculation&gt;
+&lt;/CustomFunction&gt;
+</Clipboard><Picture></Picture></FMClipboard>

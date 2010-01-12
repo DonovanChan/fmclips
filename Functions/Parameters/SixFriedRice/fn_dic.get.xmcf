@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version>31050524</Version><Comment>D</Comment><SourceWindowName></SourceWindowName><Class>XMCF</Class><ClipVersion></ClipVersion><ClipTimeStamp>3335421709</ClipTimeStamp><ClipAuthor>Donovan</ClipAuthor><Clipboard>&lt;CustomFunction id="1" name="dic.get" visible="True" parameters="dict;key"&gt;
+&lt;Calculation&gt;
+&lt;![CDATA[/*
+NAME: 
+    dic.get( dict; key )
+
+PURPOSE: 
+    Returns value of supplied key in dictionary
+
+HISTORY: 
+    Created 2007 by Jesse Antunes of six.fried.rice
+    Adapted 2008.07.16 by Donovan Chandler
+
+INPUT: 
+    dic.get(myDict, "ID")
+
+NOTES:
+    Function supports nesting -  dic.get( dic.get( myDict; "name" ); "contact" )
+*/
+
+Let( 
+    [
+    match = "&lt;:" &amp; Substitute(key; ["="; "\="]; ["¶"; "\¶"])  &amp; ":=";
+    clean = dict;
+    pstart = Position(clean; match; 1; 1);
+    start = pstart + Length(match);
+    end = Position(clean ; ":&gt;"; start; 1);
+    len = If(end = 0; 999999999; end - start)
+    ];
+    Let($$trace = key &amp; "|" &amp; match &amp; "|" &amp; pstart &amp; "|" &amp; start &amp; "|" &amp; end &amp; "|" &amp; len; "") &amp; 
+
+    If( 
+        pstart = 0; 
+        ""; 
+        Substitute(
+            Middle(clean; start; len); 
+            ["/:"; ":"]; 
+            ["/="; "="]; 
+            ["/&gt;"; "&gt;"]; 
+            ["/&lt;" ; "&lt;" ]
+        )
+    )
+)]]&gt;
+&lt;/Calculation&gt;
+&lt;/CustomFunction&gt;</Clipboard><Picture></Picture></FMClipboard>

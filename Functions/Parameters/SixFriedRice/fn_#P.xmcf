@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version>31050524</Version><Comment>#P
+Requires dic.get()</Comment><SourceWindowName></SourceWindowName><Class>XMCF</Class><ClipVersion></ClipVersion><ClipTimeStamp>3335421600</ClipTimeStamp><ClipAuthor>Donovan</ClipAuthor><Clipboard>&lt;CustomFunction id="1" name="#P" visible="True" parameters="name"&gt;
+&lt;Calculation&gt;
+&lt;![CDATA[/*
+NAME: 
+    #P( name )
+
+PURPOSE: 
+    Performs dic.get() on parameter of current script
+
+HISTORY: 
+    Created 2007 by Jesse Antunes of six.fried.rice
+    Adapted 2008.07.16 by Donovan Chandler
+*/
+
+dic.get( Get( ScriptParameter ); name )]]&gt;
+&lt;/Calculation&gt;
+&lt;/CustomFunction&gt;</Clipboard><Picture></Picture></FMClipboard>

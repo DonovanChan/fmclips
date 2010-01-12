@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version>31050524</Version><Comment>#</Comment><SourceWindowName></SourceWindowName><Class>XMCF</Class><ClipVersion></ClipVersion><ClipTimeStamp>3335421581</ClipTimeStamp><ClipAuthor>Donovan</ClipAuthor><Clipboard>&lt;CustomFunction id="1" name="#" visible="True" parameters="name;value"&gt;
+&lt;Calculation&gt;
+&lt;![CDATA[/*
+NAME: 
+    #( name; value )
+
+PURPOSE: 
+    Combines name-value pair into text string for use as a dictionary entry
+
+HISTORY: 
+    Created 2007 by Jesse Antunes of six.fried.rice
+    Reformatted 2008.07.16 by Donovan Chandler
+    
+INPUT: 
+    #("name", "Bill") &amp; #("zip", 91101 )
+    
+NOTES:
+    Function supports nesting - #( "contact"; #( "name"; "Bill" ) &amp; #("state"; "CA" ) )
+*/
+
+"&lt;:" &amp; name &amp; ":=" &amp; Substitute( value; ["="; "/="]; [":"; "/:"] ; ["&gt;"; "/&gt;"]; ["&lt;" ; "/&lt;"]   ) &amp; ":&gt;"]]&gt;
+&lt;/Calculation&gt;
+&lt;/CustomFunction&gt;</Clipboard><Picture></Picture></FMClipboard>
