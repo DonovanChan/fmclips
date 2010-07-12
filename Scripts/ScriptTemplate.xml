@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmxmlsnippet type="FMObjectList">
+  <Script includeInMenu="False" runFullAccess="False" id="2" name=".  script template">
+    <Step enable="True" id="89" name="Comment">
+      <Text> —————————————————————————————— #</Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Purpose:                  </Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Parameters (In):       </Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Parameters (Out):    ERROR</Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Context:                   FOCUS</Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Created:                   %DATE% — Donovan Chandler</Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Modified:                 </Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Notes:                      </Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment">
+      <Text> —————————————————————————————— #</Text>
+    </Step>
+    <Step enable="True" id="89" name="Comment"/>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Declare Variables</Text>
+    </Step>
+    <Step enable="True" id="141" name="Set Variable">
+      <Value>
+        <Calculation>0</Calculation>
+      </Value>
+      <Repetition>
+        <Calculation>1</Calculation>
+      </Repetition>
+      <Name>$_error</Name>
+    </Step>
+    <Step enable="True" id="141" name="Set Variable">
+      <Repetition>
+        <Calculation>1</Calculation>
+      </Repetition>
+      <Name>$_window</Name>
+    </Step>
+    <Step enable="True" id="89" name="Comment"/>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Initialize Window</Text>
+    </Step>
+    <Step enable="True" id="79" name="Freeze Window"/>
+    <Step enable="True" id="89" name="Comment"/>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Loop</Text>
+    </Step>
+    <Step enable="True" id="141" name="Set Variable">
+      <Value>
+        <Calculation>1</Calculation>
+      </Value>
+      <Repetition>
+        <Calculation>1</Calculation>
+      </Repetition>
+      <Name>$_rep</Name>
+    </Step>
+    <Step enable="True" id="141" name="Set Variable">
+      <Value>
+        <Calculation>0</Calculation>
+      </Value>
+      <Repetition>
+        <Calculation>1</Calculation>
+      </Repetition>
+      <Name>$_rep_max</Name>
+    </Step>
+    <Step enable="True" id="71" name="Loop"/>
+    <Step enable="True" id="72" name="Exit Loop If">
+      <Calculation>$_rep &gt; $_rep_max</Calculation>
+    </Step>
+    <Step enable="True" id="141" name="Set Variable">
+      <Value>
+        <Calculation>$_rep + 1</Calculation>
+      </Value>
+      <Repetition>
+        <Calculation>1</Calculation>
+      </Repetition>
+      <Name>$_rep</Name>
+    </Step>
+    <Step enable="True" id="73" name="End Loop"/>
+    <Step enable="True" id="89" name="Comment"/>
+    <Step enable="True" id="89" name="Comment">
+      <Text> Clean-Up</Text>
+    </Step>
+    <Step enable="True" id="6" name="Go to Layout">
+      <LayoutDestination value="OriginalLayout"/>
+    </Step>
+    <Step enable="True" id="103" name="Exit Script">
+      <Calculation># ( "ERROR" ; $_error )</Calculation>
+    </Step>
+    <Step enable="True" id="89" name="Comment"/>
+    <Step enable="True" id="89" name="Comment">
+      <Text> —————————————————————————————— #</Text>
+    </Step>
+  </Script>
+</fmxmlsnippet>
